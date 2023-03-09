@@ -2,7 +2,7 @@ name: Docker Image CI
 
 on:
   release:
-    types: [prereleased, edited]
+    types: [released, prereleased, edited]
 env:
   REGISTRY: ghcr.io
   IMAGE_NAME: ${{ github.repository }}
