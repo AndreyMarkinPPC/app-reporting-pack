@@ -28,7 +28,7 @@
     } 
   },
   "options": {
-    "allow-unauthenticated": false,
+    "allow-unauthenticated": true,
     "memory": "8192Mi",
     "cpu": "2"
   },
