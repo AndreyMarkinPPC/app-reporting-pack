@@ -34,7 +34,7 @@
   },
   "hooks": {
     "prebuild": {
-      "commands": ["./run-local.sh"]
+      "commands": ["./setup/install_gaarf.sh", "./run-local.sh"]
     },
     "postcreate": {
       "commands": ["./setup/setup_cloud_scheduling.sh"]
