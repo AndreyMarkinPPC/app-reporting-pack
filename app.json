@@ -25,7 +25,7 @@
       "description": "Your Google Ads MCC account ID",
       "required" : true,
       "order": 5
-    } 
+    }
   },
   "options": {
     "allow-unauthenticated": false,
@@ -34,10 +34,10 @@
   },
   "hooks": {
     "prebuild": {
-      "commands": ["./setup/install_gaarf.sh", "./run-local.sh"]
-    },
-    "postcreate": {
-      "commands": ["./setup/setup_cloud_scheduling.sh"]
+      "commands": [
+        "./gcp/cloud-run-button/create_files.sh",
+        "./gcp/setup.sh deploy_public_index deploy_all start"
+      ]
     }
   }
 }
