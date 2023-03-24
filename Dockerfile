@@ -1,4 +1,4 @@
-FROM ghcr.io/google/app-reporting-pack:latest as arp
+FROM ghcr.io/google/app-reporting-pack:latest
 ADD requirements.txt .
 RUN pip install --require-hashes -r requirements.txt
 ADD google-ads.yaml .
